@@ -1,0 +1,17 @@
+# Игнорируем виртуальное окружение Python
+venv/
+__pycache__/
+docs.Veterinary.clinic/
+
+# Игнорируем файлы конфигурации
+.env
+*.log
+
+# Игнорируем файлы IDE
+*.vscode/
+.idea/
+
+# Игнорируем кеши и временные файлы
+*.pyc
+.DS_Store
+.git_auto.sh

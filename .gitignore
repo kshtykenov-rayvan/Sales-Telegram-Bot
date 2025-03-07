@@ -14,4 +14,4 @@ docs.Veterinary.clinic/
 # Игнорируем кеши и временные файлы
 *.pyc
 .DS_Store
-.git_auto.sh
+git_auto.sh

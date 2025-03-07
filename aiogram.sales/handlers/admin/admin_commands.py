@@ -41,20 +41,7 @@ async def admin_panel(message: Message):
         ]
     )
 
-    admin_text = """
-👨‍💼 <b>Панель администратора</b>
-
-Доступные команды:
-/stats - Статистика бота
-/broadcast - Рассылка сообщения
-/ban - Блокировка пользователя
-/unban - Разблокировка пользователя
-/add_product - Добавить товар
-/delete_product - Удалить товар
-
-Используйте кнопку ниже для доступа к веб-интерфейсу админ-панели
-"""
-    await message.answer(admin_text, reply_markup=keyboard)
+    await message.answer("На команду /admin я отвечаю вот таким сообщением.\n", reply_markup=keyboard)
 
 @router.callback_query(F.data == "admin_stats")
 async def show_stats(callback: CallbackQuery):
@@ -64,4 +51,4 @@ async def show_stats(callback: CallbackQuery):
 @router.callback_query(F.data == "admin_broadcast")
 async def start_broadcast(callback: CallbackQuery):
     await callback.answer("Открываю форму рассылки...")
-    await callback.message.answer("📨 Введите текст для рассылки:")
+    await callback.message.answer("📨 Рассылка:\nВ разработке...")

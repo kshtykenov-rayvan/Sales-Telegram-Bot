@@ -12,9 +12,7 @@ router = Router()
 async def start(message: Message):
     try:
         await message.answer(
-            f"👋 Привет, {hbold(message.from_user.full_name)}!\n"
-            f"Ваш ID: {message.from_user.id}\n"
-            "Используйте /help для просмотра доступных команд."
+            f"На команду /start я отвечаю вот таким сообщением.\n"
         )
     except Exception as e:
         await message.answer("Произошла ошибка при обработке команды.")
